@@ -1,0 +1,63 @@
+body {
+  background-color: black;
+  background-image: url("images/cartographer.png")
+}
+/* background image: https://www.toptal.com/designers/subtlepatterns/ */
+
+.page{
+  background-color: #6b6b6b;
+  font-family: verdana;
+  color: #DCDCDCDC;
+  margin: auto;
+  width: 90%;
+  max-width: 700px;
+  padding-bottom: 20px;
+
+}
+
+.navbar{
+  padding: 0;
+  display: inline-block;
+  background-color: #333;
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+}
+
+.content {
+  padding: 20px;
+}
+
+a {
+  color: lightskyblue;
+}
+
+a:hover {
+  background-color: slategray;
+}
+
+p {
+    word-wrap: break-word;
+}
+
+/* Navbar from W3 schools */
+
+.navbar-li {
+  float: left;
+}
+
+.navbar-li-a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  background-color: #333
+}
+
+.navbar-active {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  background-color: #222222;
+}

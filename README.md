@@ -1,2 +1,1 @@
-# website
-ma-sra.org
+website for the MA SRA
