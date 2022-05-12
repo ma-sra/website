@@ -21,10 +21,12 @@ body {
 
 .content {
   position: relative;
+  z-index: 2;
   padding: 20px;
 }
 
-.content p {
+.content p,
+.content li {
   position: inherit;
   z-index: 2;
 }
@@ -48,6 +50,7 @@ body {
   z-index: 1;
   margin-left: 200px;
   margin-top: -200px;
+  pointer-events: none;
 }
 
 .navbar {
