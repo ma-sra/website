@@ -16,6 +16,17 @@ body {
   padding-bottom: 20px;
   font-family: Futura, 'Didact Gothic', sans-serif;
   color: #DCDCDCDC;
+  overflow: hidden;
+}
+
+.content {
+  position: relative;
+  padding: 20px;
+}
+
+.content p {
+  position: inherit;
+  z-index: 2;
 }
 
 .content h1,
@@ -29,6 +40,14 @@ body {
 
 .content h2 {
   font-family: 'Franklin Gothic Medium', 'Libre Franklin', sans-serif;
+  text-transform: uppercase;
+}
+
+.bg-image {
+  position: absolute;
+  z-index: 1;
+  margin-left: 200px;
+  margin-top: -200px;
 }
 
 .navbar {
@@ -39,10 +58,6 @@ body {
   list-style-type: none;
   margin: 0;
   overflow: hidden;
-}
-
-.content {
-  padding: 20px;
 }
 
 a {
@@ -78,9 +93,14 @@ p {
 }
 
 .navbar-active {
+  color: #df0000;
   display: block;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   background-color: #222222;
+}
+
+.navbar-active:hover {
+  color: #ffc800;
 }
