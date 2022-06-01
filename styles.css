@@ -25,9 +25,41 @@ body {
 
 .content p,
 .content li,
-.content img.hero-image {
+.content .hero-image img {
   position: inherit;
   z-index: 2;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.joinit-overlay {
+  background-color: #df0000;
+  color: #222222;
+  z-index: 3;
+  position: absolute;
+  float: right;
+  right: 20px;
+  bottom: 20px;
+  padding: 20px;
+}
+
+.joinit-overlay a {
+  color: #222222;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.joinit-overlay a:hover {
+  color: #222222;
 }
 
 .content h1,
@@ -73,11 +105,6 @@ a:hover {
 
 p {
   word-wrap: break-word;
-}
-
-.hero-image {
-  width: 100%;
-  height: auto;
 }
 
 .sidebar {
