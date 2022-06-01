@@ -5,28 +5,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Libre+Franklin:wght@900&family=Russo+One&display=swap');
 
 body {
-  background-color: #e6e6e6;
+  background-color: #222222;
 }
 
 .page {
   background-color: #222222;
-  margin: auto;
-  width: 90%;
-  max-width: 700px;
+  margin-left: 30%;
+  width: 65%;
+  max-width: 800px;
   padding-bottom: 20px;
   font-family: Futura, 'Didact Gothic', sans-serif;
   color: #DCDCDCDC;
-  overflow: hidden;
 }
 
 .content {
   position: relative;
   z-index: 2;
-  padding: 20px;
 }
 
 .content p,
-.content li {
+.content li,
+.content img.hero-image {
   position: inherit;
   z-index: 2;
 }
@@ -51,6 +50,7 @@ body {
   margin-left: 200px;
   margin-top: -200px;
   pointer-events: none;
+  width: 900px;
 }
 
 .navbar {
@@ -73,6 +73,38 @@ a:hover {
 
 p {
   word-wrap: break-word;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+}
+
+.sidebar {
+  float: left;
+  width: 30%;
+}
+
+.contact-links {
+  background-color: #333333;
+  margin-top: 10%;
+  margin-left: 12%;
+  margin-right: 44%;
+  width: 44%;
+  padding: 5%;
+}
+
+.ma-logo {
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 10%;
+  height: auto;
+}
+
+.logo-subtext {
+  font-family: Futura, 'Didact Gothic', sans-serif;
+  color: #DCDCDCDC;
+  text-align: center;
 }
 
 /* Navbar from W3 schools */
