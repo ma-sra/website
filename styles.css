@@ -64,6 +64,8 @@ body {
 
 .content h1,
 .content h2 {
+  position: inherit;
+  z-index: 2;
   color: #df0000;
 }
 
@@ -121,6 +123,23 @@ p {
   padding: 5%;
 }
 
+.contact-links a {
+  font-weight: bold;
+  text-decoration: underline;
+  font-family: Futura, 'Didact Gothic', sans-serif;
+}
+
+.contact-links ul {
+  list-style-type: none;
+  list-style-position: inside;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-links ul li {
+  padding: 10px;
+}
+
 .ma-logo {
   width: 60%;
   margin-left: 20%;
@@ -147,6 +166,10 @@ p {
   padding: 14px 16px;
   text-decoration: none;
   background-color: #333
+}
+
+#donate {
+  color: #ffc800;
 }
 
 .navbar-li-a:hover {
