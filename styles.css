@@ -5,34 +5,67 @@
 @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Libre+Franklin:wght@900&family=Russo+One&display=swap');
 
 body {
-  background-color: #e6e6e6;
+  background-color: #222222;
 }
 
 .page {
   background-color: #222222;
-  margin: auto;
-  width: 90%;
-  max-width: 700px;
+  margin-left: 30%;
+  width: 65%;
+  max-width: 800px;
   padding-bottom: 20px;
   font-family: Futura, 'Didact Gothic', sans-serif;
   color: #DCDCDCDC;
-  overflow: hidden;
 }
 
 .content {
   position: relative;
   z-index: 2;
-  padding: 20px;
 }
 
 .content p,
-.content li {
+.content li,
+.content .hero-image img {
   position: inherit;
   z-index: 2;
 }
 
+.hero-image img {
+  width: 100%;
+  height: auto;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.joinit-overlay {
+  background-color: #df0000;
+  color: #222222;
+  z-index: 3;
+  position: absolute;
+  float: right;
+  right: 20px;
+  bottom: 20px;
+  padding: 20px;
+}
+
+.joinit-overlay a {
+  color: #222222;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.joinit-overlay a:hover {
+  color: #222222;
+}
+
 .content h1,
 .content h2 {
+  position: inherit;
+  z-index: 2;
   color: #df0000;
 }
 
@@ -51,6 +84,7 @@ body {
   margin-left: 200px;
   margin-top: -200px;
   pointer-events: none;
+  width: 900px;
 }
 
 .navbar {
@@ -75,6 +109,50 @@ p {
   word-wrap: break-word;
 }
 
+.sidebar {
+  float: left;
+  width: 30%;
+}
+
+.contact-links {
+  background-color: #333333;
+  margin-top: 10%;
+  margin-left: 12%;
+  margin-right: 44%;
+  width: 44%;
+  padding: 5%;
+}
+
+.contact-links a {
+  font-weight: bold;
+  text-decoration: underline;
+  font-family: Futura, 'Didact Gothic', sans-serif;
+}
+
+.contact-links ul {
+  list-style-type: none;
+  list-style-position: inside;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-links ul li {
+  padding: 10px;
+}
+
+.ma-logo {
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 10%;
+  height: auto;
+}
+
+.logo-subtext {
+  font-family: Futura, 'Didact Gothic', sans-serif;
+  color: #DCDCDCDC;
+  text-align: center;
+}
+
 /* Navbar from W3 schools */
 
 .navbar-li {
@@ -88,6 +166,10 @@ p {
   padding: 14px 16px;
   text-decoration: none;
   background-color: #333
+}
+
+#donate {
+  color: #ffc800;
 }
 
 .navbar-li-a:hover {
