@@ -3,16 +3,29 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <head>
 <link rel="stylesheet" type="text/css" href="styles.css">
+<link rel="stylesheet" type="text/css" href="dropdown.css">
 </head>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("topnav");
+  if (x.className === "navbar") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar";
+  }
+}
+</script>
 
 <body>
   <div class="page">
-    <div class="navbar">
+    <div class="navbar", id="topnav">
     <ul class="navbar">
       <li class="navbar-li"><a a class="navbar-li-a" href="index.html">Home</a></li>
       <li class="navbar-li"><a a class="navbar-active" href="about.html">About</a></li>
       <li class="navbar-li"><a a class="navbar-li-a" href="projects.html">Projects</a></li>
       <li class="navbar-li"><a a class="navbar-li-a" href="contact.html">Contact</a></li>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
     </ul>
     </div>
 
@@ -52,4 +65,3 @@
   </div>
     </body>
 </html>
- 

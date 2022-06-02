@@ -3,22 +3,67 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <head>
 <link rel="stylesheet" type="text/css" href="styles.css">
+<link rel="stylesheet" type="text/css" href="dropdown.css">
+<link rel="stylesheet" type="text/css" href="form_style.css">
 </head>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("topnav");
+  if (x.className === "navbar") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar";
+  }
+}
+</script>
 
 <body>
   <div class="page">
-    <div class="navbar">
+    <div class="navbar", id="topnav">
     <ul class="navbar">
       <li class="navbar-li"><a a class="navbar-li-a" href="index.html">Home</a></li>
       <li class="navbar-li"><a a class="navbar-li-a" href="about.html">About</a></li>
       <li class="navbar-li"><a a class="navbar-li-a" href="projects.html">Projects</a></li>
       <li class="navbar-li"><a a class="navbar-active" href="contact.html">Contact</a></li>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
     </ul>
   </div>
 
   <div class="content">
-    <img class="bg-image" src="images/hammer_and_sickle.svg"/>
-    massachusetts[at]srachapters.org
+    <div class="container">
+     <form name="contact" method="POST" data-netlify="true">
+      <div class="row">
+        <div class="col-25">
+          <label for="name">Name</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="name" name="name" placeholder="Your name...">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="email">Email</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="email" name="email" placeholder="Your email...">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="message">Message</label>
+        </div>
+        <div class="col-75">
+          <textarea id="message" name="message" placeholder="Write something..." style="height:200px"></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <input type="submit" value="Submit">
+      </div>
+      </form>
+    </div>
   </div>
 
 
