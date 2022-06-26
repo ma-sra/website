@@ -26,7 +26,7 @@ body {
 .content p,
 .content li,
 .content .hero-image img {
-  position: inherit;
+  position: relative;
   z-index: 2;
 }
 
