@@ -51,36 +51,36 @@ function myFunction() {
 
   <div class="content">
     <div class="container">
-     <form name="contact" method="POST" data-netlify="true">
-      <div class="row">
-        <div class="col-25">
-          <label for="name">Name</label>
+      <form name="contact" method="POST" data-netlify="true">
+        <div class="row">
+          <div class="col-25">
+            <label for="name">Name</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="name" name="name" placeholder="Your name...">
+          </div>
         </div>
-        <div class="col-75">
-          <input type="text" id="name" name="name" placeholder="Your name...">
-        </div>
-      </div>
 
-      <div class="row">
-        <div class="col-25">
-          <label for="email">Email</label>
+        <div class="row">
+          <div class="col-25">
+            <label for="email">Email</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="email" name="email" placeholder="Your email...">
+          </div>
         </div>
-        <div class="col-75">
-          <input type="text" id="email" name="email" placeholder="Your email...">
-        </div>
-      </div>
 
-      <div class="row">
-        <div class="col-25">
-          <label for="message">Message</label>
+        <div class="row">
+          <div class="col-25">
+            <label for="message">Message</label>
+          </div>
+          <div class="col-75">
+            <textarea id="message" name="message" placeholder="Write something..." style="height:200px"></textarea>
+          </div>
         </div>
-        <div class="col-75">
-          <textarea id="message" name="message" placeholder="Write something..." style="height:200px"></textarea>
+        <div class="row">
+          <input type="submit" value="Submit">
         </div>
-      </div>
-      <div class="row">
-        <input type="submit" value="Submit">
-      </div>
       </form>
     </div>
   </div>
