@@ -53,6 +53,10 @@ input[type=submit]:hover {
   margin-top: 6px;
 }
 
+.row {
+  overflow: auto;
+}
+
 /* Clear floats after the columns */
 .row:after {
   content: "";
