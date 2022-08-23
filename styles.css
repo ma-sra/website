@@ -6,6 +6,8 @@
 
 body {
   background-color: #222222;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .page {
@@ -178,6 +180,10 @@ p {
   .page {
     margin-left: 5%;
     width: 90%;
+  }
+
+  .bg-image {
+    margin-left: -200px;
   }
 }
 
