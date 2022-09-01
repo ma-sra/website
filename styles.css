@@ -6,6 +6,8 @@
 
 body {
   background-color: #222222;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .page {
@@ -119,7 +121,7 @@ p {
   margin-top: 10%;
   margin-left: 12%;
   margin-right: 44%;
-  width: 44%;
+  width: fit-content;
   padding: 5%;
 }
 
@@ -140,6 +142,16 @@ p {
   padding: 10px;
 }
 
+/*
+  At this point the contact links start to overlap with the content on the page.
+  Since this info is reduntant from the contact page anyway, let's just hide it.
+*/
+@media screen and (max-width: 1100px) {
+  .contact-links {
+    display: none;
+  }
+}
+
 .ma-logo {
   width: 60%;
   margin-left: 20%;
@@ -151,6 +163,33 @@ p {
   font-family: Futura, 'Didact Gothic', sans-serif;
   color: #DCDCDCDC;
   text-align: center;
+}
+
+/* Handle mobile screen */
+
+@media screen and (max-width: 600px) {
+  .logo-subtext {
+    display: none;
+  }
+  
+  .sidebar {
+    float: top;
+    width: 30%;
+  }
+
+  .page {
+    margin-left: 5%;
+    width: 90%;
+  }
+
+  .content {
+    position: relative;
+    top: 50%;
+  }
+
+  .bg-image {
+    margin-left: -200px;
+  }
 }
 
 /* Navbar from W3 schools */

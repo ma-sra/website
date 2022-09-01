@@ -6,16 +6,21 @@
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the navbar (.icon) */
 @media screen and (max-width: 700px) {
-  .navbar {background-color:#333;}
-  .navbar a:not(:first-child), .navbar li:not(:first-child) {
+  .navbar {
+    background-color:#333;
+    position: relative;
+    z-index: 1000;
+    float: right;
+  }
+  .navbar a, .navbar li {
     display: none;
   }
   .navbar a.icon {
     float: right;
     display: block;
-    font-size: 20px;
     text-decoration: none;
     padding: 14px 16px;
+    background-color: #222222;
   }
 }
 
@@ -23,12 +28,17 @@
 @media screen and (max-width: 700px) {
   .navbar.responsive
   {
-    position: relative;
+    position: absolute;
+    right: 32px;
+    z-index: 1000;
+    float: right;
   }
   .navbar.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
+    float: right;
+    display: block;
+    text-decoration: none;
+    padding: 14px 16px;
+    background-color: #222222;
   }
   .navbar.responsive li {
     float: none;
